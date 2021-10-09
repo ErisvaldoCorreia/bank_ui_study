@@ -52,9 +52,7 @@ class _BaseScreemState extends State<BaseScreem> {
       ),
 
       //Paginations
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+      body: _widgetOptions.elementAt(_selectedIndex),
 
       //Navigations
       bottomNavigationBar: BottomNavigationBar(
