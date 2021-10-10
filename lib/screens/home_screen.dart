@@ -1,4 +1,7 @@
+import 'package:bank_ui_study/constants/font_styles.dart';
 import 'package:bank_ui_study/data/dummy_data_card.dart';
+import 'package:bank_ui_study/data/dummy_data_transaction.dart';
+import 'package:bank_ui_study/screens/widgets/transaction_tile.dart';
 import 'package:flutter/material.dart';
 
 import './widgets/my_card.dart';
@@ -18,9 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // ignore: sized_box_for_whitespace
-            Container(
+            SizedBox(
               height: MediaQuery.of(context).size.height * 0.28,
               child: ListView.separated(
                 itemBuilder: (context, index) {
@@ -33,6 +36,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 scrollDirection: Axis.horizontal,
                 itemCount: myCards.length,
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Recent Transactions",
+              style: FontStyles.bodyText,
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            ListView.separated(
+              itemBuilder: (context, index) {
+                return TransactionTile(transaction: myTransactions[index]);
+              },
+              separatorBuilder: (context, index) {
+                return const SizedBox(height: 10);
+              },
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: myTransactions.length,
             ),
           ],
         ),

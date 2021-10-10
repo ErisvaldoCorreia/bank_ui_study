@@ -26,6 +26,26 @@ List<TransactionModel> myTransactions = [
     avatar:
         'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png',
     name: 'John Doe',
+    month: 'Apr',
+    color: kPrimaryColor,
+    currentBalance: '1242',
+    percentIndicatorChange: 'up',
+    percentageChange: '0,22%',
+  ),
+  TransactionModel(
+    avatar:
+        'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png',
+    name: 'John Doe',
+    month: 'Mar',
+    color: kPrimaryColor,
+    currentBalance: '6000',
+    percentIndicatorChange: 'up',
+    percentageChange: '0,45%',
+  ),
+  TransactionModel(
+    avatar:
+        'https://www.pngall.com/wp-content/uploads/5/Profile-Avatar-PNG.png',
+    name: 'John Doe',
     month: 'Mar',
     color: kPrimaryColor,
     currentBalance: '6000',
