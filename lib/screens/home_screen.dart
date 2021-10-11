@@ -1,9 +1,10 @@
-import 'package:bank_ui_study/constants/font_styles.dart';
-import 'package:bank_ui_study/data/dummy_data_card.dart';
-import 'package:bank_ui_study/data/dummy_data_transaction.dart';
-import 'package:bank_ui_study/screens/widgets/transaction_tile.dart';
 import 'package:flutter/material.dart';
 
+import '../constants/font_styles.dart';
+import '../data/dummy_data_card.dart';
+import '../data/dummy_data_transaction.dart';
+
+import './widgets/transaction_tile.dart';
 import './widgets/my_card.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.28,
+              height: MediaQuery.of(context).size.height * 0.26,
               child: ListView.separated(
                 itemBuilder: (context, index) {
                   return MyCard(card: myCards[index]);

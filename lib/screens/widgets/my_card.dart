@@ -1,6 +1,7 @@
-import 'package:bank_ui_study/constants/font_styles.dart';
-import 'package:bank_ui_study/models/card_model.dart';
 import 'package:flutter/material.dart';
+
+import '../../constants/font_styles.dart';
+import '../../models/card_model.dart';
 
 class MyCard extends StatelessWidget {
   final CardModel card;

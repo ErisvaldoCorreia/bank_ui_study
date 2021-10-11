@@ -23,7 +23,8 @@ class FontStyles {
 
   static final listTitle = GoogleFonts.poppins(
     color: kPrimaryColor,
-    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    fontSize: 18,
   );
 
   static final listSubTitle = GoogleFonts.poppins(

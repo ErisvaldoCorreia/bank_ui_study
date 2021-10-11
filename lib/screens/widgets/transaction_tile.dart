@@ -1,7 +1,8 @@
-import 'package:bank_ui_study/constants/font_styles.dart';
-import 'package:bank_ui_study/models/transaction_model.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+import '../../constants/font_styles.dart';
+import '../../models/transaction_model.dart';
 
 class TransactionTile extends StatelessWidget {
   final TransactionModel transaction;
