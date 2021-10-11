@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import './screens/drawer_screen.dart';
 import './screens/base_screen.dart';
 
 void main() {
@@ -20,7 +22,12 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const BaseScreem(),
+      home: Stack(
+        children: const [
+          DrawerScreen(),
+          BaseScreem(),
+        ],
+      ),
     );
   }
 }
