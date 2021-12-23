@@ -38,6 +38,7 @@ dependencies:
   # Project Dependencies
   font_awesome_flutter: ^9.1.0
   google_fonts: ^2.1.0
+  animated_card: ^2.0.0
 
 dev_dependencies:
   flutter_test:

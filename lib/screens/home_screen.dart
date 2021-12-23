@@ -1,3 +1,4 @@
+import 'package:animated_card/animated_card.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/font_styles.dart';
@@ -41,9 +42,13 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(
               height: 20,
             ),
-            Text(
-              "Recent Transactions",
-              style: FontStyles.bodyText,
+            AnimatedCard(
+              direction: AnimatedCardDirection.left,
+              duration: const Duration(milliseconds: 250),
+              child: Text(
+                "Recent Transactions",
+                style: FontStyles.bodyText,
+              ),
             ),
             const SizedBox(
               height: 20,
